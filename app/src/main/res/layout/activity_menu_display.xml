@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu_display"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.solveet.ganesh.foodiesfeast.MenuDisplayActivity">
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listOfDishes"
+        android:layout_height="match_parent"></ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="TOTAL   USD"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="100dp"
+            android:text="0.00"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:id="@+id/total"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:background="@drawable/buybutton"/>
+    </LinearLayout>
+</RelativeLayout>
