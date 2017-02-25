@@ -9,32 +9,41 @@
     <ListView
         android:layout_width="match_parent"
         android:id="@+id/listOfDishes"
-        android:layout_height="match_parent"></ListView>
+        android:layout_height="match_parent"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:background="@color/colorPrimary"
         android:layout_alignParentBottom="true">
         <TextView
             android:layout_width="130dp"
             android:layout_height="match_parent"
-            android:text="TOTAL   USD"
+            android:text="TOTAL   INR"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="0.5"
+            android:textColor="@android:color/white"
             android:textSize="18sp"/>
         <TextView
             android:layout_width="100dp"
             android:text="0.00"
-            android:gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
             android:textStyle="bold"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
             android:id="@+id/total"
             android:layout_height="match_parent" />
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="0dp"
-            android:background="@drawable/buybutton"/>
+
     </LinearLayout>
+    <ImageButton
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:onClick="buybutton"
+        android:padding="28dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_cash_payment"/>
 </RelativeLayout>

@@ -1,31 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
+
     android:layout_height="wrap_content">
     <LinearLayout
+        android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <ImageView
-            android:layout_width="130dp"
-            android:layout_height="100dp" />
+            android:layout_width="wrap_content"
+
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_spaghetti"
+            android:layout_height="wrap_content" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Product Name"
-                android:textStyle="bold"
-                android:id="@+id/name"
-                android:textSize="18sp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="USD 4.5"
-                android:id="@+id/price"
-                android:gravity="right"/>
+                android:layout_marginBottom="6dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Name"
+                    android:textStyle="bold"
+                    android:id="@+id/name"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginLeft="60dp"
+                    android:text="INR 40.5"
+                    android:id="@+id/price" />
+            </LinearLayout>
+
             <TextView
                 android:layout_width="match_parent"
                 android:id="@+id/description"
@@ -39,6 +53,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/addToChartBox"
+                    android:layout_marginRight="16dp"
                     android:text="ADD TO CART"/>
                 <TextView
                     android:padding="8sp"
@@ -49,13 +64,16 @@
                 <Spinner
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/quantitySpinner"
-                    ></Spinner>
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/quantitySpinner" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
     <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
         android:layout_width="match_parent"
-        android:layout_height="3dp"
+        android:layout_height="1dp"
         android:background="@color/colorPrimary"/>
 </LinearLayout>
