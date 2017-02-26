@@ -62,9 +62,9 @@ public class RestaurentAdapter extends ArrayAdapter<Restaurent> {
         }
         Restaurent r=(Restaurent)getItem(position);
         Handler.name.setText(r.getName());
-        Handler.noOfDish.setText(r.getNumberOfitem());
-        Handler.WorkingHors.setText(r.getStartWorkingTime());
-        Handler.WorkingDays.setText(r.getWorkingDays());
+        Handler.noOfDish.setText(r.getNumberOfitem()+" Delicious Dishes");
+        Handler.WorkingHors.setText(r.getStartWorkingTime()+" to "+r.getEndWorkingTime());
+        Handler.WorkingDays.setText(""+r.getWorkingDays());
         return RestaurentView;
     }
 }

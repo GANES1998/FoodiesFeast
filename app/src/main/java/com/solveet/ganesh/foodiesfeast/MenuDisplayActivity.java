@@ -17,6 +17,7 @@ public class MenuDisplayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_display);
+
         listView=(ListView)findViewById(R.id.listOfDishes);
         adapter=new DishAdapter(getApplicationContext(),R.layout.each_menu);
         textView=(TextView) findViewById(R.id.total);

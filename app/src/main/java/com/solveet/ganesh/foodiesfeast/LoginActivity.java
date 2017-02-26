@@ -221,11 +221,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         }
     }
 
-
-    void callSignup(View view){
-        startActivity(new Intent(getApplicationContext(),SignUpActivity.class));
-        finish();
-    }
     /**
      * Attempts to sign in or register the account specified by the login form.
      * If there are form errors (invalid email, missing fields, etc.), the
@@ -276,7 +271,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                         @Override
                         public void onSuccess(AuthResult authResult) {
                             showProgress(false);
-                            startActivity(new Intent(getApplicationContext(),MenuDisplayActivity.class));
+                            startActivity(new Intent(getApplicationContext(),MainActivity.class));
                         }
                     })
                     .addOnFailureListener(this, new OnFailureListener() {
